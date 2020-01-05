@@ -8,16 +8,16 @@ class BooksController < ApplicationController
   end
 
   def show
+    @book = Book.find(params[:id])
   end
 
   def new
   end
 
   def create
-    book = Book.new(book_params)
-    book.save
-    # 保存完了のメッセージ
-    redirect_to books_path # 一覧画面へのリダイレクト
+    @book = Book.new(book_params)
+    @book.save
+    redirect_to book_path(@book) # 詳細画面へのリダイレクト
   end
 
   def edit
