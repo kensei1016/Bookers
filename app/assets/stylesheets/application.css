@@ -14,15 +14,6 @@
  *= require_self
  */
 
- /*index.html.erb*/
- #index-notice {
-   display: none;
-   color: #1B831A;
- }
-/*index.html.erb*/
-
-/*show.html.erb*/
  #notice {
    color: #1B831A;
  }
-/*show.html.erb*/
